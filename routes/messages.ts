@@ -13,6 +13,7 @@ router.post('/create', async (req, res) => {
         res.status(500).json({error: 'Internal server error'});
     }
 });
+
 router.get('/messages', async (req, res) => {
     try {
         const messages = await readMessages();
