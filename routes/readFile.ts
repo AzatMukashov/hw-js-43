@@ -6,6 +6,8 @@ const messagesDir = path.join(__dirname, '../messages');
 export const readMessages = async (): Promise<MessageData[]> => {
     const files = await fs.readdir(messagesDir);
     return Promise.all(
+        files.slice(-5).map(async file => {
 
+        })
     )
 };
